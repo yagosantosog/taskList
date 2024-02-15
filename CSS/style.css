@@ -19,7 +19,6 @@ h1 {
     flex-direction: column;
     justify-content: flex-start;
     padding: 0 20%;
-    border: 2px solid red;
     height: 100vh;
 }
 
