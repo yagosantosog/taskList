@@ -11,15 +11,13 @@ add.onclick = function addTarefa() {
     if((valorDigitado !== "") && (valorDigitado !== null) && (valorDigitado !== undefined)) {
         let novoItem = ` <div id="${contador}" class="item">
         <div id="icon_${contador}" onclick = "marcarTarefa(${contador})" class="item-icon">
-            <span class="material-symbols-outlined">
-                circle
-            </span>
+            <img src="../IMG/circle.svg">
         </div>
         <div onclick = "marcarTarefa(${contador})" class="item-name">
             ${valorDigitado}
         </div>
         <div class="item-btn">
-            <button onclick = "deletar(${contador})" class="delete"><span class="material-symbols-outlined">delete</span>Deletar</button>
+            <button onclick = "deletar(${contador})" class="delete"><img src="../IMG/delete.svg">Deletar</button>
         </div>
     </div>`;
 
@@ -51,15 +49,14 @@ function marcarTarefa(id) {
     if(classe == "item") {
         item.classList.add("clicked");
         console.log(item.classList)
-        icon.querySelector('span').innerHTML = "";
-        icon.querySelector('span').innerHTML = `check_circle`;
+        icon.querySelector('img').setAttribute('src', '../IMG/check_circle.svg');
 
         item.parentNode.appendChild(item);
     }else {
         item.classList.remove("clicked");
         console.log(item.classList)
-        icon.querySelector('span').innerHTML = "";
-        icon.querySelector('span').innerHTML = `circle`;
+        icon.style.background = ``;
+        icon.querySelector('img').setAttribute('src', '../IMG/circle.svg');
     }
 }
 
