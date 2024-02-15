@@ -11,13 +11,13 @@ add.onclick = function addTarefa() {
     if((valorDigitado !== "") && (valorDigitado !== null) && (valorDigitado !== undefined)) {
         let novoItem = ` <div id="${contador}" class="item">
         <div id="icon_${contador}" onclick = "marcarTarefa(${contador})" class="item-icon">
-            <img src="../IMG/circle.svg">
+            <img src="/IMG/circle.svg">
         </div>
         <div onclick = "marcarTarefa(${contador})" class="item-name">
             ${valorDigitado}
         </div>
         <div class="item-btn">
-            <button onclick = "deletar(${contador})" class="delete"><img src="./IMG/delete.svg">Deletar</button>
+            <button onclick = "deletar(${contador})" class="delete"><img src="/IMG/delete.svg">Deletar</button>
         </div>
     </div>`;
 
