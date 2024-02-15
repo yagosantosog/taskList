@@ -17,7 +17,7 @@ add.onclick = function addTarefa() {
             ${valorDigitado}
         </div>
         <div class="item-btn">
-            <button onclick = "deletar(${contador})" class="delete"><img src="../IMG/delete.svg">Deletar</button>
+            <button onclick = "deletar(${contador})" class="delete"><img src="./IMG/delete.svg">Deletar</button>
         </div>
     </div>`;
 
@@ -49,14 +49,14 @@ function marcarTarefa(id) {
     if(classe == "item") {
         item.classList.add("clicked");
         console.log(item.classList)
-        icon.querySelector('img').setAttribute('src', '../IMG/check_circle.svg');
+        icon.querySelector('img').setAttribute('src', './IMG/check_circle.svg');
 
         item.parentNode.appendChild(item);
     }else {
         item.classList.remove("clicked");
         console.log(item.classList)
         icon.style.background = ``;
-        icon.querySelector('img').setAttribute('src', '../IMG/circle.svg');
+        icon.querySelector('img').setAttribute('src', './IMG/circle.svg');
     }
 }
 
