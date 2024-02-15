@@ -11,7 +11,7 @@ add.onclick = function addTarefa() {
     if((valorDigitado !== "") && (valorDigitado !== null) && (valorDigitado !== undefined)) {
         let novoItem = ` <div id="${contador}" class="item">
         <div id="icon_${contador}" onclick = "marcarTarefa(${contador})" class="item-icon">
-            <img src="/IMG/circle.svg">
+            <img src="/IMG/circle.png">
         </div>
         <div onclick = "marcarTarefa(${contador})" class="item-name">
             ${valorDigitado}
@@ -56,7 +56,7 @@ function marcarTarefa(id) {
         item.classList.remove("clicked");
         console.log(item.classList)
         icon.style.background = ``;
-        icon.querySelector('img').setAttribute('src', '/IMG/circle.svg');
+        icon.querySelector('img').setAttribute('src', '/IMG/circle.png');
     }
 }
 
