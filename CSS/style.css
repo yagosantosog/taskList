@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: #eeeeee;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.check_circle {
+    color: green;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+header {
+    display: flex;
+    height: 80px;
+    max-width: 60%;
+    margin: auto;
+    align-items: center;
+}
+
+input {
+    flex: 80%;
+    height: 100%;
+    padding-left: 10%;
+}
+
+.add {
+    flex: 20%;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: green;
+    color: white;
+    font-weight: bold;
+    border: none;
+    user-select: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 60%;
+    margin: auto;
+    padding-top: 40px;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    height: 50px;
+    width: 100%;
+    box-shadow: 0 0 20px #ccc;
+    margin-bottom: 2%;
+    cursor: pointer;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.item.clicked {
+    background: #d4f6d9;
+}
+
+.item.clicked .item-name {
+    text-decoration: line-through;
+    color: rgb(104, 103, 103);
+}
+
+.item-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 20%;
+    text-align: center;
+    font-size: 2rem;
+    height: 100%;
+}
+
+.item-icon span {
+    user-select: none;
+}
+
+.item-name {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex: 55%;
+    font-family: 20px;
+    font-weight: bold;
+    height: 100%;
+    user-select: none;
+}
+
+.item-btn {
+    flex: 25%;
+    height: 100%;
+}
+
+.delete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: red;
+    color: white;
+    border: none;
+    height: 100%;
+    width: 100%;
+    user-select: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
